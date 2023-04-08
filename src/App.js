@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { Button } from '@mui/material';
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
+import {red} from '@mui/material/colors'
+const theme = createTheme({
+  palette: {
+
+    primary: {
+      main:"#f458ff"
+    },
+    action:{
+      active:'#f1f1f1'
+    }
+
+  },
+
+  
+});
+
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <Button color='primary' variant='contained'> click</Button>
+      </ThemeProvider>
     </div>
   );
 }
