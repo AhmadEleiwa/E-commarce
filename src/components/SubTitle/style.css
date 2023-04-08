@@ -1,0 +1,12 @@
+.sub-title{
+    display: flex;
+    align-items: center;
+    color: #DB4444;
+    gap: 1em;
+}
+.sub-title div{
+    width: 20px;
+    height: 40px;
+    border-radius: 4px;
+    background-color:#DB4444
+}
