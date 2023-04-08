@@ -7,12 +7,17 @@ const RightSide = props => {
 
     return <div className="right-side">
         <Carousel
-        showArrows={false}
+            showArrows={false}
+            autoPlay
+            swipeable
+            emulateTouch
+            infiniteLoop
+           
         >
-                {[1,2,3,4].map((item ,index) => {
-                    return <Item title='Up to 10% off Voucher' key={index} src='https://picsum.photos/1800' />
-                })}
-        </Carousel> 
+            {[1, 2, 3, 4].map((item, index) => {
+                return <Item title='Up to 10% off Voucher' key={index} src='https://picsum.photos/1800' />
+            })}
+        </Carousel>
     </div>
 }
 
