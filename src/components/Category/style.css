@@ -1,5 +1,5 @@
 .category-card{
-    width: 170px;
+    min-width: 170px;
     height: 145px;
     transition: all 0.1s ease-in-out !important;
 }
