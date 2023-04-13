@@ -27,3 +27,9 @@
     align-items: flex-start;
     gap: 1em;
 }
+
+.slider .slider-header .slider-header-controls{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
