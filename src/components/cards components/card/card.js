@@ -31,7 +31,7 @@ const Card = (props) => {
   return (
     <Paper
       elevation={0}
-      sx={{ position: "relative", marginRight: "1rem" }}
+      sx={{ position: "relative", marginRight: "2rem" }}
       key={id}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
