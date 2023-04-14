@@ -12,7 +12,7 @@ const ExpiredNotice = () => {
 };
 
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
-  console.log(days);
+  // console.log(days);
   return (
     <Typography display="flex">
       <DateTimeDisplay value={days} type={"Days"} />

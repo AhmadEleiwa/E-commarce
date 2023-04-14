@@ -16,21 +16,12 @@ const FlashSaleContainer = () => {
   // Calculate the width of each card based on number of cards to show
   const cardWidth = 100 / cardsToShow;
 
-  // const handlePrevClick = () => {
-  //   setActiveIndex((prevIndex) =>
-  //     prevIndex === 0 ? productsData.length - 1 : prevIndex - 1
-  //   );
-  // };
   const handlePrevClick = () => {
     setActiveIndex((prevIndex) =>
       prevIndex - cardsToShow < 0 ? 0 : prevIndex - cardsToShow
     );
   };
 
-  // const handleNextClick = () => {
-  //   setActiveIndex((prevIndex) => (prevIndex + 1) % productsData.length);
-  //   console.log(activeIndex);
-  // };
   const handleNextClick = () => {
     setActiveIndex((prevIndex) =>
       prevIndex + cardsToShow >= productsData.length
@@ -107,6 +98,8 @@ const FlashSaleContainer = () => {
               id={card.id}
               active={index === 0}
               width={`${cardWidth}%`}
+              showDiscount={true}
+              showOldPrice={true}
             />
           ))}
         </Box>

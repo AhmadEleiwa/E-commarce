@@ -13,11 +13,14 @@ const Card = (props) => {
     price,
     rating: { rate, count },
     id,
+    showDiscount,
+    showOldPrice,
   } = props;
 
   // values which data doesnt have
   const oldPrice = (price + 15).toFixed(2);
   const discountValue = (((oldPrice - price) / oldPrice) * 100).toFixed(0);
+  // let showDiscount = true;
 
   const [showAddToCart, setShowAddToCart] = useState(false);
   const handleMouseEnter = () => {
@@ -49,19 +52,26 @@ const Card = (props) => {
       >
         {title}
       </Typography>
-      <Typography variant="subtitle1" component="span" mr={1.5}>
-        {price}$
-      </Typography>
-      <Typography variant="subtitle1" component="del">
-        {oldPrice}$
-      </Typography>
-      <Box sx={{ display: "flex", alignItems: "center" }}>
-        <Rating name="read-only" value={rate} readOnly precision={0.5} />
-        <Typography variant="subtitle1" component="label" ml={1}>
-          ({count})
+      <Box display={showOldPrice === false ? "flex" : "block"}>
+        {" "}
+        <Typography variant="subtitle1" component="span" mr={1.5}>
+          {price}$
         </Typography>
+        {showOldPrice === true && (
+          <Typography variant="subtitle1" component="del">
+            {oldPrice}$
+          </Typography>
+        )}
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Rating name="read-only" value={rate} readOnly precision={0.5} />
+          <Typography variant="subtitle1" component="label" ml={1}>
+            ({count})
+          </Typography>
+        </Box>
+        {showDiscount === true && (
+          <DiscountState discountValue={discountValue} />
+        )}
       </Box>
-      <DiscountState discountValue={discountValue} />
     </Paper>
   );
 };
