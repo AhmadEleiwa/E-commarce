@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import style from "./FlashSaleContainer.module.css";
 import Card from "../cards components/card/card";
-import { Box, Container, IconButton } from "@mui/material";
+import { Box, Container, IconButton, Typography } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import productsData from "../cards components/products data/products data";
 import ViewAllButton from "../ViewAllButton/ViewAllButton";
 import Title from "../Title";
 import SubTitle from "../SubTitle/index";
+import CounterContainer from "../CountDownComponents/CounterContainer";
 const FlashSaleContainer = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   // Number of cards to show at a time
@@ -50,7 +51,9 @@ const FlashSaleContainer = () => {
       sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
       <Box mb={7.5}>
-        <SubTitle>Today’s</SubTitle>
+        <Typography mb={3}>
+          <SubTitle>Today’s</SubTitle>
+        </Typography>
         <Box
           mb={5}
           sx={{
@@ -65,7 +68,9 @@ const FlashSaleContainer = () => {
             }}
           >
             <Title>Flash Sales</Title>
-            <Title> timer</Title>
+            <Typography ml={8}>
+              <CounterContainer saleDays={30} />
+            </Typography>
           </Box>
           <Box>
             <IconButton
