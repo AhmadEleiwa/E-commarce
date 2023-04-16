@@ -34,7 +34,7 @@ const Card = (props) => {
   return (
     <Paper
       elevation={0}
-      sx={{ position: "relative", marginRight: "2rem" }}
+      sx={{ position: "relative", marginRight: "2rem", maxWidth: "270px" }}
       key={id}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -74,6 +74,17 @@ const Card = (props) => {
       </Box>
     </Paper>
   );
+};
+
+Card.defaultProps = {
+  title: "product name",
+  price: 0,
+  image:
+    "https://previews.123rf.com/images/zo3listic/zo3listic1905/zo3listic190500065/125123076-shopping-bag-icon-shopping-bag-vector-icon.jpg",
+  rating: { rate: 0, count: 0 },
+  id: "id",
+  showDiscount: true,
+  showOldPrice: true,
 };
 
 export default Card;
