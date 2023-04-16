@@ -1,35 +1,37 @@
-.slider{
-    /* width: 100%; */
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap:2em;
-}
-.list-slider{       
-    display:flex;
-    position: relative;
-    gap: 1em;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+.slider {
+  /* width: 100%; */
+  max-width: 1208px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
-.slider .slider-btn{
-    background-color: gray;
+.list-slider {
+  display: flex;
+  position: relative;
+  /* gap: 1em; */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.slider .slider-header{
-    display: flex;
-    justify-content: space-between;
-}
-.slider .slider-header .slider-header-titles{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1em;
+.slider .slider-btn {
+  background-color: gray;
 }
 
-.slider .slider-header .slider-header-controls{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+.slider .slider-header {
+  display: flex;
+  justify-content: space-between;
+}
+.slider .slider-header .slider-header-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.slider .slider-header .slider-header-controls {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
