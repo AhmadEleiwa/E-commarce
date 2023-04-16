@@ -7,9 +7,11 @@ const Banner = props => {
             <Typography color='secondary'>
                 Categories
             </Typography>
-            <h1>{props.title}</h1>
+            <Typography variant="h1">
+                {props.title}
+            </Typography>
             <TimersItems timeAsList={['23', '05', '59', '35']} />
-            <Button color={'secondary'} variant='contained' disableElevation  sx={{padding:'1em 3em '}}>Buy Now</Button>
+            <Button color={'secondary'} variant='contained' disableElevation sx={{ padding: '1em 3em ' }}>Buy Now</Button>
         </div>
         <img src={props.img} alt={props.title} />
     </div>
