@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Children } from "react";
 import { Button } from "@mui/material";
 import { hover } from "@testing-library/user-event/dist/hover";
 
-const ViewAllButton = () => {
+const ViewAllButton = ({ children }) => {
   return (
     <div>
       <Button
@@ -17,7 +17,7 @@ const ViewAllButton = () => {
           },
         }}
       >
-        View All Products
+        {children}
       </Button>
     </div>
   );

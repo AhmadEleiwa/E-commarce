@@ -69,7 +69,7 @@ const ListSlider = (props) => {
           justifyContent="center
         "
         >
-          <ViewAllButton />
+          <ViewAllButton>View All Products</ViewAllButton>
         </Box>
       )}
     </div>
