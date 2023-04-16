@@ -4,7 +4,7 @@ import Banner from '../components/Banner'
 const HomePage = props => {
     return <Container maxWidth={'xl'}>
         <HeroSection />
-        <Banner />
+        <Banner title="Test" />
     </Container>
 }
 
