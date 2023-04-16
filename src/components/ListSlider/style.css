@@ -9,7 +9,7 @@
 .list-slider {
   display: flex;
   position: relative;
-  gap: 1em;
+  /* gap: 1em; */
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
