@@ -1,5 +1,5 @@
-import Cover from "../Cover/Cover";
-import Navbar from "../Navbar/Navbar";
+import Cover from "../Cover";
+import Navbar from "../Navbar";
 export default function Header(){
     return(
     <>
