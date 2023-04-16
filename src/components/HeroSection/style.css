@@ -1,0 +1,7 @@
+.hero-section {
+    width: 80%;
+    height: 46vh;
+    margin: 0 auto;
+    display: flex;
+    gap: 1em;
+}
