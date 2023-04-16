@@ -1,6 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
 
-import Card from "../cards components/card/card";
 import ViewAllButton from "../ViewAllButton/ViewAllButton";
 import Title from "../Title";
 import SubTitle from "../SubTitle/index";
@@ -11,7 +10,7 @@ const ProductsList = ({
   subtitle,
   hideAllHeader,
   showButtomButton,
-  onlySubtitleHeader,
+  ShowSubtitle,
   children,
 }) => {
   // onlysubtitle : false hideallhidder false
@@ -25,7 +24,7 @@ const ProductsList = ({
       }}
     >
       <Box mb={7.5}>
-        {onlySubtitleHeader && (
+        {ShowSubtitle && (
           <Typography mb={7.5}>
             <SubTitle>{subtitle}</SubTitle>
           </Typography>
@@ -76,7 +75,7 @@ ProductsList.defaultProps = {
   subtitle: "subtutle",
   hideAllHeader: false,
   showButtomButton: false,
-  onlySubtitleHeader: false,
+  ShowSubtitle: false,
 };
 
 export default ProductsList;
