@@ -1,6 +1,6 @@
 import './style.css'
 const TimersItems = props => {
-    return <div className="timer-items">
+    return <div className="timer-items-banner">
         <div className="item" >
             <p>{props.timeAsList[0]}</p>
             <p>Houres</p>

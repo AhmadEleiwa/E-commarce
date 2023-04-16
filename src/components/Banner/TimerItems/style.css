@@ -1,9 +1,9 @@
-.timer-items{
+.timer-items-banner{
     display: flex;
     align-items: center;
     gap: 1em;
 }
-.timer-items .item{
+.timer-items-banner .item{
     width: 3em;
     height: 3em;
     padding: 1em;
@@ -16,6 +16,6 @@
     background-color: white;
     font-size: 14px;
 }
-.timer-items .item p{
+.timer-items-banner .item p{
     margin: 0  ;
 }
