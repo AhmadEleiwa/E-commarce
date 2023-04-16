@@ -1,7 +1,7 @@
 import { Button, Typography } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/material/styles';   
-
+import Header from './components/Header/Header';
 const theme = createTheme({
     palette: {
       primary: {
@@ -19,6 +19,7 @@ const Skeleton = props =>{
     return   <div className="App">
       <ThemeProvider theme={theme}>
         {/* Header Here */}
+        <Header /> 
             {props.children}
         {/* Footer Here */}
       </ThemeProvider>
