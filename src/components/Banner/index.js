@@ -13,7 +13,10 @@ const Banner = props => {
             <TimersItems timeAsList={['23', '05', '59', '35']} />
             <Button color={'secondary'} variant='contained' disableElevation sx={{ padding: '1em 3em ' }}>Buy Now</Button>
         </div>
-        <img src={props.img} alt={props.title} />
+        <div className="img-cover">
+            <img src={props.img} alt={props.title} />      
+            <div className="img-drop-shadow"></div>
+        </div>
     </div>
 }
 
