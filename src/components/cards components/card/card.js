@@ -71,16 +71,16 @@ const Card = (props) => {
             ({count})
           </Typography>
         </Box>
-        {showColors && (
-          <Box display="flex">
-            <ProductsColors />
-          </Box>
-        )}
         {showDiscount === true && (
           <DiscountState bgColor="#DB4444">-{discountValue}%</DiscountState>
         )}
         {isNew === true && <DiscountState bgColor="#00FF66">NEW</DiscountState>}
       </Box>
+      {showColors && (
+        <Box display="flex">
+          <ProductsColors />
+        </Box>
+      )}
     </Paper>
   );
 };
