@@ -5,3 +5,5 @@ const HomePage = props => {
         test
     </Container>
 }
+
+export default HomePage
