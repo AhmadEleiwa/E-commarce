@@ -7,3 +7,6 @@ const Skeleton = props =>{
       </ThemeProvider>
     </div>
 }
+
+
+export default Skeleton
