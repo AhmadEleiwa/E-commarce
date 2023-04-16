@@ -5,7 +5,8 @@ import styles from "./card.module.css";
 import { Paper, Typography, Rating, Box } from "@mui/material";
 import LikeIconButton from "../LikeIconButton/LikeIconButton";
 import AddToCartButton from "../AddToCartButton/AddToCartButton";
-import DiscountState from "../discountState/DiscountState";
+import DiscountState from "../discount & New Status/DiscountState";
+import ProductsColors from "../ProductsColors/ProductsColors";
 const Card = (props) => {
   const {
     image,
@@ -15,12 +16,14 @@ const Card = (props) => {
     id,
     showDiscount,
     showOldPrice,
+    showColors,
+    isNew,
   } = props;
 
-  // values which data doesnt have
+  // values which data doesnt have => oldPrice, discountValie
+
   const oldPrice = (price + 15).toFixed(2);
   const discountValue = (((oldPrice - price) / oldPrice) * 100).toFixed(0);
-  // let showDiscount = true;
 
   const [showAddToCart, setShowAddToCart] = useState(false);
   const handleMouseEnter = () => {
@@ -68,9 +71,15 @@ const Card = (props) => {
             ({count})
           </Typography>
         </Box>
-        {showDiscount === true && (
-          <DiscountState discountValue={discountValue} />
+        {showColors && (
+          <Box display="flex">
+            <ProductsColors />
+          </Box>
         )}
+        {showDiscount === true && (
+          <DiscountState bgColor="#DB4444">-{discountValue}%</DiscountState>
+        )}
+        {isNew === true && <DiscountState bgColor="#00FF66">NEW</DiscountState>}
       </Box>
     </Paper>
   );
@@ -85,6 +94,8 @@ Card.defaultProps = {
   id: "id",
   showDiscount: true,
   showOldPrice: true,
+  showColors: false,
+  isNew: false,
 };
 
 export default Card;

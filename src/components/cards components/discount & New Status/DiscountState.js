@@ -1,12 +1,12 @@
 import React from "react";
 import { Box } from "@mui/material";
 
-const DiscountState = ({ discountValue }) => {
+const DiscountState = ({ bgColor, children }) => {
   return (
     <Box
       sx={{
         position: "absolute",
-        bgcolor: "#DB4444",
+        bgcolor: `${bgColor}`,
         color: "#FAFAFA",
       }}
       top={12}
@@ -17,7 +17,7 @@ const DiscountState = ({ discountValue }) => {
       fontSize={12}
       borderRadius={1}
     >
-      -{discountValue}%
+      {children}
     </Box>
   );
 };
