@@ -1,7 +1,7 @@
 import { Button, Typography } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/material/styles';   
-import Footer from './components/Footer/Footer';
+import Footer from './components/Footer';
 import Header from './components/Header';
 const theme = createTheme({
     palette: {
