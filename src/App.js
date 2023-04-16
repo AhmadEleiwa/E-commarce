@@ -1,17 +1,34 @@
-import "./App.css";
-import FlashSaleCopmponent from "./components/FlashSaleCopmponent/FlashSaleCopmponent";
-import ExploreOurProducts from "./components/Explore Products section/ExploreOurProducts";
-import BestSellingSection from "./components/Best Selling Products/BestSellingSection";
-import RelatedItemSection from "./components/Related-Item-List-section/RelatedItemSection";
+
+import './App.css';
+
+
+
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Skeleton from './Skeleton';
+
+import HomePage from './pages/Home';
+
+
 function App() {
   return (
-    <>
-      <FlashSaleCopmponent />
-      <ExploreOurProducts />
-      <BestSellingSection />
-      <RelatedItemSection />
-    </>
+    <Router>
+      <Routes>
+        <Route index path='/' element={<Skeleton> <HomePage /> </Skeleton>}></Route>
+        <Route  path='/product/:id' element={"productId"}></Route>
+
+        <Route  path='*' element={"ERROR"}></Route>
+
+      </Routes>
+    </Router>
+    // <div className="App">
+    //   <ThemeProvider theme={theme}>
+    //     <Button color='primary' variant='contained' disableElevation> click</Button>
+    //     <Typography>ss</Typography>
+    //   </ThemeProvider>
+    // </div>
+
+
   );
 }
-
 export default App;
