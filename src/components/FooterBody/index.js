@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/system";
+import { Box } from "@mui/system";
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -7,7 +7,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
-import Button from '@mui/material/Button';
 import InputAdornment from '@mui/material/InputAdornment';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import {createTheme,ThemeProvider } from '@mui/material/styles';
@@ -109,11 +108,11 @@ export default function FooterBody(){
                 </ThemeProvider>
                     <Box sx={{display:'flex',gap:'8px',mt:'8px'}}>
                         <Box>
-                            <img height='100%' src={img1}/>
+                            <img height='100%' src={img1} alt={'img1'}/>
                         </Box>
                         <Box sx={{display:'flex',flexDirection:'column',justifyContent:'space-between'}}>
-                            <img src={img2}/>
-                            <img src={img3}/>
+                            <img src={img2} alt={'img2'}/>
+                            <img src={img3} alt={'img3'}/>
                         </Box>
                     </Box>
 

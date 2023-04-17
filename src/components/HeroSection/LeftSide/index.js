@@ -1,5 +1,4 @@
 
-import { Link } from "@mui/material"
 
 import ArrowRightIcon from '@mui/icons-material/ArrowForwardIos'
 import './style.css'

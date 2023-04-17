@@ -1,4 +1,3 @@
-import { Button, Typography } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/material/styles';   
 import Footer from './components/Footer';
