@@ -17,7 +17,7 @@ function App() {
         <Route index path='/' element={<Skeleton> <HomePage /> </Skeleton>}></Route>
         <Route  path='/product/:id' element={"productId"}></Route>
 
-        <Route  path='*' element={"ERROR"}></Route>
+        <Route  path='*' element={<Skeleton> </Skeleton>}></Route>
 
       </Routes>
     </Router>
