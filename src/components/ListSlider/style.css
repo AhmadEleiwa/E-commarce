@@ -7,8 +7,14 @@
 .list-slider {
   display: flex;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: scroll;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+.list-slider > *{
+  flex-shrink: 0 !important;
+  scroll-snap-align: start !important;
+  
 }
 
 .slider-items .slider-btn {
