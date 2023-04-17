@@ -3,7 +3,6 @@ import { Button } from "@mui/material";
 
 const AddToCartButton = () => {
   return (
-    <div>
       <Button
         disableElevation
         variant="contained"
@@ -26,7 +25,6 @@ const AddToCartButton = () => {
       >
         Add to Cart
       </Button>
-    </div>
   );
 };
 
