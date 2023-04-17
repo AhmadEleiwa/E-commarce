@@ -18,7 +18,8 @@
     justify-content: space-between;
     gap: 3px;
     cursor: pointer;
-    padding: 0 5px;
+    font-size: larger;
+    padding: 5px 10px;
     transition: all 0.1s ease-in-out;
 }
 .left-side .item:hover{
