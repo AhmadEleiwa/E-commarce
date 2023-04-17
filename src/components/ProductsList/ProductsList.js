@@ -15,14 +15,7 @@ const ProductsList = ({
 }) => {
   // onlysubtitle : false hideallhidder false
   return (
-    <Container
-      className={style.ListConotainer}
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <Box style={{ width:"100%", margin:'2em'}}>
       <Box mb={7.5}>
         {ShowSubtitle && (
           <Typography mb={7.5}>
@@ -67,7 +60,7 @@ const ProductsList = ({
         </Box>
       </Box>
       {showButtomButton && <ViewAllButton>View All Products</ViewAllButton>}
-    </Container>
+    </Box>
   );
 };
 ProductsList.defaultProps = {
