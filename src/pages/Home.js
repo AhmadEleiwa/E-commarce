@@ -7,16 +7,18 @@ import ExploreProducts from "../components/ExploreProducts"
 import BestSellingProduct from "../components/BestSellingProducts"
 import RelatedItemSection from "../components/RelatedItemSection"
 import { Box } from "@mui/system"
+import BrowseByCategory from "../components/BrowseByCategory"
 const HomePage = props => {
     return <Container maxWidth={'xl'}  >
 
         <Box display={'flex'} flexDirection={'column'} gap={'4em'} sx={{margin :'2em'}}>
             <HeroSection />
             <FlashSaleComponent />
-            <ExploreProducts />
+            <BrowseByCategory />
             <BestSellingProduct />
-            <RelatedItemSection />
-            <Banner title="Test" img={Testimg} />
+            <Banner title="Enhance Your Music Experience" img={Testimg} />
+            <ExploreProducts />
+     
 
 
         </Box>
