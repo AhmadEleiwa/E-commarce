@@ -34,7 +34,7 @@ const ListSlider = (props) => {
   };
 
   return (
-    <div className="slider" style={{ width: width ? width : "81.5%" }}>
+    <div className="slider-items" style={{ width: width ? width : "100%" }}>
       <div className="slider-header">
         <div className="slider-header-titles">
           <SubTitle>{subTitle}</SubTitle>
