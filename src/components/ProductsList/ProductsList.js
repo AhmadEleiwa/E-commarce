@@ -3,7 +3,6 @@ import { Box, Container, Typography } from "@mui/material";
 import ViewAllButton from "../ViewAllButton/ViewAllButton";
 import Title from "../Title";
 import SubTitle from "../SubTitle/index";
-import style from "./style.module.css";
 
 const ProductsList = ({
   title,
@@ -15,7 +14,7 @@ const ProductsList = ({
 }) => {
   // onlysubtitle : false hideallhidder false
   return (
-    <Box style={{ width:"100%", margin:'2em'}}>
+    <Box style={{ width:"100%"}}>
       <Box mb={7.5}>
         {ShowSubtitle && (
           <Typography mb={7.5}>

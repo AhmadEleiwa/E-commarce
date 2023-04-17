@@ -1,5 +1,4 @@
 .slider-items{
-  margin: 2em auto;
   display: flex;
   flex-direction: column;
   gap: 2em;
