@@ -7,7 +7,7 @@ const Banner = props => {
             <Typography color='secondary'>
                 Categories
             </Typography>
-            <Typography variant="h1">
+            <Typography variant="h2">
                 {props.title}
             </Typography>
             <TimersItems timeAsList={['23', '05', '59', '35']} />
