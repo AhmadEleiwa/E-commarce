@@ -1,5 +1,5 @@
 import React from "react";
-import productsData from "../../cards components/products data/products data";
+import productsData from "../../products data/products data";
 
 const getRandomProducts = () => {
   const getRandomIndexes = (arr) => {

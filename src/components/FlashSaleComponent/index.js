@@ -1,7 +1,7 @@
 import React from "react";
 import ListSlider from "../ListSlider";
 import Card from "../cards components/Card";
-import productData from "../cards components/products data/products data";
+import productData from "../products data/products data";
 
 const FlashSaleComponent = () => {
   return (
