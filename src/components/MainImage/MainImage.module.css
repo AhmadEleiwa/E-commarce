@@ -1,0 +1,18 @@
+.mainImgContainer{
+    height: 600px;
+    /* width: 500px; */
+    width: 40%;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6em;
+}
+
+.mainImg{
+    /* width: 446px; */
+    width: 80%;
+    height: 315px;
+    border: 0;
+}

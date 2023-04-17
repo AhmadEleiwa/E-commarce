@@ -1,0 +1,22 @@
+.imagesContainer{
+    width: 15%;
+    height: fit-content;
+    margin-right: 3em;
+}
+
+.asideImgContainer{
+    height: 138px;
+    /* width: 170px; */
+    width: 100%;
+    /* margin-bottom: 16px; */
+    margin-bottom: 1em;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+}
+.asideImg{
+    height: 90%;
+    width: 90%;
+}
+.asideImgContainer:hover{
+    border:1px solid #ADD8E6;
+}

@@ -1,0 +1,33 @@
+.price{
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-bottom: 1em;
+     
+}
+.desc{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: fit-content;
+    /* width: 373px; */
+    width: 100%;
+    margin-bottom: 1em;
+    position: relative;
+
+}
+/* .desc::after{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 1px;
+    opacity: 0.5;
+    background-color: black;
+    top:6em;
+    left: 0;
+} */
