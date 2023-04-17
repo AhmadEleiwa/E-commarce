@@ -5,8 +5,10 @@ const AddToCartButton = () => {
   return (
     <div>
       <Button
+        disableElevation
         variant="contained"
         fullWidth
+        
         sx={{
           position: "absolute",
           bottom: 0,
