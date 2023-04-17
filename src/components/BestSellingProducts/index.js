@@ -4,7 +4,7 @@ import Card from "../cards components/card/card";
 import getRandomProducts from "../ProductsList/getRandomProducts/index";
 const randomProductsArray = getRandomProducts();
 
-const BestSellingSection = () => {
+const BestSellingProduct = () => {
   return (
       <ProductsList title="Best Selling Products" subtitle="This Month">
         {randomProductsArray.map((card, index) => (
@@ -23,4 +23,4 @@ const BestSellingSection = () => {
   );
 };
 
-export default BestSellingSection;
+export default BestSellingProduct;
