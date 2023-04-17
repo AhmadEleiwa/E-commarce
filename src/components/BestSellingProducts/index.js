@@ -1,6 +1,6 @@
 import React from "react";
 import ProductsList from "../ProductsList/ProductsList";
-import Card from "../cards components/card/card";
+import Card from "../cards components/Card";
 import getRandomProducts from "../ProductsList/getRandomProducts/index";
 const randomProductsArray = getRandomProducts();
 
