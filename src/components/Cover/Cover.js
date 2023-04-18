@@ -9,7 +9,7 @@ import { Box} from "@mui/material";
 export default function Cover(){
     return(
         <div className={style.coverContainer}>
-            <Typography component="p">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</Typography><a href="#">ShopNow</a>
+            <Typography component="p">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#">ShopNow</a></Typography>
             <LanguagesList />
         </div>
     );
