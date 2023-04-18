@@ -1,8 +1,10 @@
 import {Typography } from "@mui/material"
-
+import './style.css'
 const Title = props =>{
-    return <Typography sx={{fontSize:'36px'}} variant='h1'>
+
+    return <Typography className="title" fontSize={'inherit'}  variant='h1'>
         {props.children}
+ 
     </Typography>
 }
 
