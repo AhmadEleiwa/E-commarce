@@ -11,7 +11,7 @@ export default function AsideImages({images,handleOnClick}){
 function AsideImg({imgSrc,handleSetMainImg}){
     return(
         <div className={style.asideImgContainer}>
-            <img src={imgSrc} className={style.asideImg} onClick={(event)=>handleSetMainImg(event.target.getAttribute('src'))}></img>
+            <img src={imgSrc} alt='aside' className={style.asideImg} onClick={(event)=>handleSetMainImg(event.target.getAttribute('src'))}></img>
         </div>
     );
 }

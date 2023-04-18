@@ -5,7 +5,6 @@ import Testimg from './test.png'
 import FlashSaleComponent from "../components/FlashSaleComponent"
 import ExploreProducts from "../components/ExploreProducts"
 import BestSellingProduct from "../components/BestSellingProducts"
-import RelatedItemSection from "../components/RelatedItemSection"
 import { Box } from "@mui/system"
 import BrowseByCategory from "../components/BrowseByCategory"
 const HomePage = props => {

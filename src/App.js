@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route index path='/' element={<Skeleton> <HomePage /> </Skeleton>}></Route>
+        <Route index element={<Skeleton> <HomePage /> </Skeleton>}></Route>
         <Route  path='/product/:id' element={<Skeleton><ProductDetailsPage /></Skeleton>}></Route>
 
         <Route  path='*' element={<Skeleton><ErrorNotFound /> </Skeleton>}></Route>

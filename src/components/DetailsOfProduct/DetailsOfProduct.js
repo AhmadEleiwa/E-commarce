@@ -10,7 +10,7 @@ import { useParams } from 'react-router-dom';
 export default function DetailsOfProduct() {
     const {id} = useParams()
     const theProductData = productsData.find(item => {
-        return item.id == id;
+        return item.id === parseInt(id);
     });
 
     const array = [theProductData.image, theProductData.image, theProductData.image, theProductData.image];
