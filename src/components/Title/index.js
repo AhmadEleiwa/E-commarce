@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, Typography } from "@mui/material"
+import {Typography } from "@mui/material"
 
 const Title = props =>{
     return <Typography sx={{fontSize:'36px'}} variant='h1'>
