@@ -1,0 +1,22 @@
+.time-label{
+    font-size: 1.5em !important;
+
+}
+
+.label{
+    font-size: 0.5em !important;;
+    margin-right: 5px !important;
+}
+
+@media screen and (max-width:1280px) {
+    .time-label{
+        font-size: 0.9em !important;
+    
+    }
+    .label{
+        font-size: 0.67em !important;;
+        margin-right: 3px !important;
+
+    }
+    
+}
