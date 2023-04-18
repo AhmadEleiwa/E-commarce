@@ -5,7 +5,6 @@ const ViewAllButton = ({ children }) => {
   return (
     <div>
       <Button
-        size="large"
         sx={{
           color: "#FAFAFA",
           paddingX: "2rem",
