@@ -1,9 +1,9 @@
 .productImg {
-  max-width: 17rem;
+  width: 100%;
   height: 15.5rem;
 }
 .card{
-  max-width: 270px;
+  width: 270px;
 }
 @media screen  and (max-width:1280px){
   .productImg {
@@ -11,6 +11,6 @@
     height: 10.5rem;
   }
   .card{
-    max-width: 200px;
+    width: 200px;
   }
 }
