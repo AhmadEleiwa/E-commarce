@@ -1,25 +1,24 @@
 import NavLinks from '../NavLinks/NavLinks';
 import ProductImages from '../ProductImages/ProductImages';
 import Details from '../Details/Details';
-import productsData from '../ProductsData/ProductsData';
+import productsData from '../products data/products data';
 import style from './DetailsOfProduct.module.css';
+import { useParams } from 'react-router-dom';
 
- //get ID from url
- //const params = useParams();
-//assumption
-const idfromLink=3;
 
-const theProductData = productsData.find(item => {
-    return item.id === idfromLink;
-  });
 
-export default function DetailsOfProduct(){ 
-    const array=[theProductData.image,theProductData.image,theProductData.image,theProductData.image]; 
-    return(
+export default function DetailsOfProduct() {
+    const {id} = useParams()
+    const theProductData = productsData.find(item => {
+        return item.id == id;
+    });
+
+    const array = [theProductData.image, theProductData.image, theProductData.image, theProductData.image];
+    return (
         <div>
             <div><NavLinks prouctName={theProductData.title} /></div>
             <div className={style.container}>
-                <ProductImages arr={array}/>
+                <ProductImages arr={array} />
                 <Details prouctData={theProductData} />
             </div>
         </div>
