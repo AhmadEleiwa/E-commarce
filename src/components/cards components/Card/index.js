@@ -37,14 +37,16 @@ const Card = (props) => {
   return (
     <Link to={`/product/${id}`} style={{textDecoration:'none'}} >
     <Paper
+  
       elevation={0}
-      sx={{ position: "relative", marginRight: "2rem", maxWidth: "270px" }}
+      sx={{ position: "relative", marginRight: "2rem"}}
+      className={styles.card}
       key={id}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Box sx={{ position: "relative" }}>
-        <img src={image} alt={title} className={styles.productImg} />
+      <Box sx={{ position: "relative"}} >
+        <img src={image}  alt={title} className={styles.productImg} />
         {showAddToCart && <AddToCartButton />}
       </Box>
       <LikeIconButton />
