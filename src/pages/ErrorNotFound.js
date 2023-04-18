@@ -1,10 +1,11 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import ViewAllButton from "../components/ViewAllButton/ViewAllButton";
+import { Link } from "react-router-dom";
 
 const ErrorNotFound = () => {
   return (
-    <Box display="flex" flexDirection="column" alignItems="center">
+    <Box display="flex" flexDirection="column" alignItems="center" sx={{margin:'1em'}}>
       <Box display="flex" flexDirection="column" alignItems="center" mb={10}>
         <Typography fontSize="110px" fontWeight="500" fontFamily="Inter">
           404 Not Found
@@ -14,7 +15,7 @@ const ErrorNotFound = () => {
         </Typography>
       </Box>
 
-      <ViewAllButton>Back to home page</ViewAllButton>
+      <ViewAllButton><Link to={'/'} style={{textDecoration:'none', color:'inherit'}}>Back to home page</Link></ViewAllButton>
     </Box>
   );
 };

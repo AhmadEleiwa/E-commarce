@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import styles from "./card.module.css";
-
+import {Link} from 'react-router-dom'
 import { Paper, Typography, Rating, Box } from "@mui/material";
 import LikeIconButton from "../LikeIconButton/LikeIconButton";
 import AddToCartButton from "../AddToCartButton/AddToCartButton";
@@ -35,6 +35,7 @@ const Card = (props) => {
   };
 
   return (
+    <Link to={`/product/${id}`} style={{textDecoration:'none'}} >
     <Paper
       elevation={0}
       sx={{ position: "relative", marginRight: "2rem", maxWidth: "270px" }}
@@ -82,7 +83,9 @@ const Card = (props) => {
         </Box>
       )}
     </Paper>
+    </Link>
   );
+  
 };
 
 Card.defaultProps = {

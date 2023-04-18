@@ -4,6 +4,7 @@ import Skeleton from './Skeleton';
 
 import HomePage from './pages/Home';
 import ProductDetailsPage from './pages/ProductDetails';
+import ErrorNotFound from './pages/ErrorNotFound';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Route index path='/' element={<Skeleton> <HomePage /> </Skeleton>}></Route>
         <Route  path='/product/:id' element={<Skeleton><ProductDetailsPage /></Skeleton>}></Route>
 
-        <Route  path='*' element={<Skeleton> </Skeleton>}></Route>
+        <Route  path='*' element={<Skeleton><ErrorNotFound /> </Skeleton>}></Route>
 
       </Routes>
     </Router>
