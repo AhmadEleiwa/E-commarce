@@ -51,11 +51,14 @@
     .banner {
         font-size: 1em;
         height: 258px;
+        
+
     }
 
     .banner .body {
-        width: 25%;
+        width: 50%;
         margin-left: 0.7em;
+        gap: 1em;
     }
     .banner .img-cover{
         margin-right: 0em;
@@ -66,4 +69,14 @@
         padding: 0.6em !important;
     }
   
+}
+@media screen and (max-width:720px) {
+    .banner{
+        height: 12em;
+        font-size: 0.8em;
+    }
+    .btn{
+        font-size: 0.8em !important;
+        padding: 0.2em !important;
+    }
 }

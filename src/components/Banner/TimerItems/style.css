@@ -31,3 +31,15 @@
         padding: 2.2em;
     }
 }
+
+@media screen and (max-width:720px) {
+    .timer-items-banner{
+        gap: 0.5em;
+    }
+    .timer-items-banner .item {
+
+        font-size: 0.5em;
+
+        padding: 1.2em;
+    }
+}
