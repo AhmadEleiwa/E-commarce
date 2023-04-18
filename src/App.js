@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Skeleton from './Skeleton';
 
 import HomePage from './pages/Home';
-
+import ProductDetailsPage from './pages/ProductDetails';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route index path='/' element={<Skeleton> <HomePage /> </Skeleton>}></Route>
-        <Route  path='/product/:id' element={"productId"}></Route>
+        <Route  path='/product/:id' element={<Skeleton><ProductDetailsPage /></Skeleton>}></Route>
 
         <Route  path='*' element={<Skeleton> </Skeleton>}></Route>
 
