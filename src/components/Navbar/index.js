@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
-import Link from '@mui/material/Link';
+import { Link } from 'react-router-dom';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
@@ -111,10 +111,10 @@ function PrimarySearchAppBar() {
             Exclusive
           </Typography>
           <Box sx={{ display:'flex',alignItems: 'center',justifyContent:'space-between', bgcolor: 'primary',ml:'130px',width: '367px'  }} >
-            <Link href="#home" className={style.NavLink}  underline="none" sx={{color:"#000000"}} >Home</Link>
-            <Link href="#contact" className={style.NavLink} underline="none" sx={{color:"#000000"}}>Contact</Link>
-            <Link href="#about"  className={style.NavLink} underline="none" sx={{color:"#000000"}}>About</Link>
-            <Link href="#signup" className={style.NavLink} underline="none" sx={{color:"#000000"}}>Sign Up</Link>
+            <Link style={{textDecoration:"none", color:'#000000'}}  to='/' className={style.NavLink}  >Home</Link>
+            <Link  style={{textDecoration:"none", color:'#000000'}} href="#contact" className={style.NavLink} >Contact</Link>
+            <Link  style={{textDecoration:"none", color:'#000000'}} href="#about"  className={style.NavLink} >About</Link>
+            <Link  style={{textDecoration:"none", color:'#000000'}} href="#signup" className={style.NavLink} >Sign Up</Link>
           </Box>
           <Box sx={{ flexGrow: 1 }} />
           <Search sx={{display:'flex',backgroundColor:"#F5F5F5",color:"#000000","&:hover": {backgroundColor: '#F5F5F5'},width:'243px'}}>
