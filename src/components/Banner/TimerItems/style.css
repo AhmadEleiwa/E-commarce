@@ -1,12 +1,13 @@
-.timer-items-banner{
+.timer-items-banner {
     display: flex;
     align-items: center;
     gap: 1em;
 }
-.timer-items-banner .item{
+
+.timer-items-banner .item {
     width: 3em;
     height: 3em;
-    padding: 2.2em ;
+    padding: 2.2em;
     border-radius: 50%;
     color: black;
     display: flex;
@@ -14,8 +15,19 @@
     align-items: center;
     justify-content: space-around;
     background-color: white;
-    font-size: 14px;
+    font-size: 1em;
 }
-.timer-items-banner .item p{
-    margin: 0  ;
+
+.timer-items-banner .item p {
+    margin: 0;
+}
+
+@media screen and (max-width:1280px) {
+    .timer-items-banner .item {
+        width: 1.5em;
+        height: 1.5em;
+        font-size: 0.5em;
+
+        padding: 2.2em;
+    }
 }
