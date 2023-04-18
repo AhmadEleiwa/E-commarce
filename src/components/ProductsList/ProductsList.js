@@ -14,7 +14,7 @@ const ProductsList = ({
 }) => {
   // onlysubtitle : false hideallhidder false
   return (
-    <Box style={{ width:"100%"}}>
+    <Box maxWidth={'100%'} >
       <Box mb={7.5}>
         {ShowSubtitle && (
           <Typography mb={7.5}>
@@ -28,10 +28,10 @@ const ProductsList = ({
             </Typography>
             <Box
               mb={7.5}
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-              }}
+              display={"flex"}
+              justifyContent={'space-between'}
+
+
             >
               <Box
                 sx={{
@@ -53,7 +53,7 @@ const ProductsList = ({
           display="flex"
           alignItems="center"
           justifyContent="center"
-          width="100%"
+          flexWrap={'wrap'}
         >
           {children}
         </Box>
