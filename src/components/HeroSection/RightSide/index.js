@@ -12,7 +12,6 @@ const RightSide = props => {
             swipeable
             emulateTouch
             infiniteLoop
-           
         >
             {[1, 2, 3, 4].map((item, index) => {
                 return <Item title='Up to 10% off Voucher' key={index} src='https://picsum.photos/1800' />

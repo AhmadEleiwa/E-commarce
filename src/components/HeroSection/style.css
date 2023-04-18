@@ -5,3 +5,13 @@
     gap: 1em;
 
 }
+@media screen  and (max-width:1280px){
+    .hero-section{
+        height: 80vh;
+        font-size: 0.8em;
+        flex-direction: column;
+    }
+    .hero-section > *{
+        width: 100%;
+    }
+}
