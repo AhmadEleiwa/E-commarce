@@ -1,33 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Skeleton from './Skeleton';
 
-import { Button, Typography } from '@mui/material';
-import { createTheme } from '@mui/material/styles';
-import { ThemeProvider } from '@mui/material/styles';
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#DB4444",
-      contrastText: '#fafafa'
-    },
-    secondary: {
-      main: '#00FF66',
-      contrastText: '#fafafa'
-    },
-  },
-});
+import HomePage from './pages/Home';
 
 
 function App() {
   return (
-    <div className="App">
-      <ThemeProvider theme={theme}>
-        <Button color='primary' variant='contained' disableElevation> click</Button>
-        <Typography>ss</Typography>
-      </ThemeProvider>
-    </div>
+    <Router>
+      <Routes>
+        <Route index path='/' element={<Skeleton> <HomePage /> </Skeleton>}></Route>
+        <Route  path='/product/:id' element={"productId"}></Route>
+
+        <Route  path='*' element={<Skeleton> </Skeleton>}></Route>
+
+      </Routes>
+    </Router>
+    // <div className="App">
+    //   <ThemeProvider theme={theme}>
+    //     <Button color='primary' variant='contained' disableElevation> click</Button>
+    //     <Typography>ss</Typography>
+    //   </ThemeProvider>
+    // </div>
+
+
   );
 }
-
 export default App;
