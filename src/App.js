@@ -4,22 +4,23 @@ import './App.css';
 
 
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Skeleton from './Skeleton';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Skeleton from './Skeleton';
 
-
+import Header from './components/Header';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route index path='/' element={<Skeleton>test</Skeleton>}></Route>
-        <Route  path='/product/:id' element={"productId"}></Route>
+    <Header />
+    // <Router>
+    //   <Routes>
+    //     <Route index path='/' element={<Skeleton>test</Skeleton>}></Route>
+    //     <Route  path='/product/:id' element={"productId"}></Route>
 
-        <Route  path='*' element={"ERROR"}></Route>
+    //     <Route  path='*' element={"ERROR"}></Route>
 
-      </Routes>
-    </Router>
+    //   </Routes>
+    // </Router>
     // <div className="App">
     //   <ThemeProvider theme={theme}>
     //     <Button color='primary' variant='contained' disableElevation> click</Button>

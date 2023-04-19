@@ -4,7 +4,7 @@ import Select from '@mui/material/Select';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
-import { Box} from "@mui/material";
+import { Box, Link} from "@mui/material";
 
 export default function Cover(){
     return(
