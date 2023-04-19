@@ -137,11 +137,11 @@ function PrimarySearchAppBar() {
           <Typography variant="h6" noWrap component="div" sx={{ display: {lg:'flex', md:'flex',xs: 'none' },ml:"3em" ,fontWeight:700,color:"black",fontSize: '24px',width:'fit-content'}}>
             Exclusive
           </Typography>
-          <Box sx={{ display:{ lg:'flex',md:'none',xs:'none'},alignItems: 'center',justifyContent:'space-between', bgcolor: 'primary',ml:'6em' }} >
-            <Link href="#home" className={style.NavLink}  underline="none" sx={{color:"#000000"}} >Home</Link>
-            <Link href="#contact" className={style.NavLink} underline="none" sx={{color:"#000000"}}>Contact</Link>
-            <Link href="#about"  className={style.NavLink} underline="none" sx={{color:"#000000"}}>About</Link>
-            <Link href="#signup" className={style.NavLink} underline="none" sx={{color:"#000000"}}>Sign Up</Link>
+          <Box sx={{ display:'flex',alignItems: 'center',justifyContent:'space-between', bgcolor: 'primary',ml:'130px',width: '367px'  }} >
+            <Link style={{textDecoration:"none", color:'#000000'}}  to='/' className={style.NavLink}  >Home</Link>
+            <Link  style={{textDecoration:"none", color:'#000000'}} href="#contact" className={style.NavLink} >Contact</Link>
+            <Link  style={{textDecoration:"none", color:'#000000'}} href="#about"  className={style.NavLink} >About</Link>
+            <Link  style={{textDecoration:"none", color:'#000000'}} href="#signup" className={style.NavLink} >Sign Up</Link>
           </Box>
           <Box sx={{ flexGrow: 1 }} />
           <Search sx={{display:'flex',backgroundColor:"#F5F5F5",color:"#000000","&:hover": {backgroundColor: '#F5F5F5'}}}>
