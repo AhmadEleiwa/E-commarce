@@ -1,8 +1,7 @@
 import style from "./Cover.module.css";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
-import { Box} from "@mui/material";
-import { Link } from "react-router-dom";
+import { Box, Link} from "@mui/material";
 
 export default function Cover(){
     return(
