@@ -44,8 +44,8 @@ const theme = createTheme({
 export default function FooterBody(){
     return(
         <div className={style.footerBody}>
-            <Grid container spacing={4} sx={{display:'flex',width:'1170px',m:'auto'}}>
-                <Grid item xs={3} >
+            <Grid container direction="row" justifyContent="center" spacing={4} columns={{ xs: 4, sm: 8, md: 12 }} >
+                <Grid item xs={8} sm={4} md={3} lg={3}>
                 <ThemeProvider theme={theme}>
                     <Typography variant='body1' gutterBottom>Exclusive</Typography>
                     <Typography variant='subtitle2'gutterBottom>Subscribe</Typography>
@@ -53,7 +53,7 @@ export default function FooterBody(){
                 </ThemeProvider>
                     <Box>
                         <TextField
-                        sx={{'& .MuiOutlinedInput-root': { border: '1px solid #ced4da',width:'217px',height:'48px',mt:'16px'},'&:focus': {
+                        sx={{'& .MuiOutlinedInput-root': { border: '1px solid #ced4da',width:'80%',height:'48px',mt:'1.5em'},'&:focus': {
                             border: '1px solid #ced4da',
                            
                           }}}
@@ -74,7 +74,7 @@ export default function FooterBody(){
                             />
                     </Box>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={8} sm={4} md={2} lg={2}>
                 <ThemeProvider theme={theme}>
                     <Typography variant='subtitle2'gutterBottom>Support</Typography>
                     <Typography variant='subtitle1'>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</Typography>
@@ -82,7 +82,7 @@ export default function FooterBody(){
                     <Typography variant='subtitle1'>+88015-88888-9999</Typography>
                 </ThemeProvider>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={8} sm={4} md={2} lg={2}>
                 <ThemeProvider theme={theme}>
                     <Typography variant='subtitle2'gutterBottom>Account</Typography>
                     <Typography variant='subtitle1'>My Account</Typography>
@@ -92,7 +92,7 @@ export default function FooterBody(){
                     <Typography variant='subtitle1'>Shop</Typography>
                 </ThemeProvider>
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={8} sm={4} md={2} lg={2}>
                 <ThemeProvider theme={theme}>
                     <Typography variant='subtitle2'gutterBottom>Quick Link</Typography>
                     <Typography variant='subtitle1'>Privacy Policy</Typography>
@@ -101,12 +101,12 @@ export default function FooterBody(){
                     <Typography variant='subtitle1'>Contact</Typography>
                 </ThemeProvider>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={8} sm={8} md={3} lg={3}>
                 <ThemeProvider theme={theme}>
                     <Typography variant='subtitle2'gutterBottom>Download App</Typography>
                     <Typography variant='caption'>Save $3 with App New User Only</Typography>
                 </ThemeProvider>
-                    <Box sx={{display:'flex',gap:'8px',mt:'8px'}}>
+                    <Box sx={{display:'flex',gap:1,mt:'.5em'}}>
                         <Box>
                             <img height='100%' src={img1} alt={'img1'}/>
                         </Box>
@@ -116,7 +116,7 @@ export default function FooterBody(){
                         </Box>
                     </Box>
 
-                    <Box sx={{display:'flex',justifyContent:'space-between',width:'168px',mt:'28px'}}>
+                    <Box sx={{display:'flex',justifyContent:'space-between',width:'50%',mt:'2em'}}>
                         <FacebookIcon />
                         <TwitterIcon />
                         <InstagramIcon />
