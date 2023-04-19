@@ -3,23 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-.Grid{
-
-}
 .footerBody{
     background-color:#000000;
     width: 100%;
-    height: 376px;
+    /* height: 376px; */
     color: white;
     text-align: left;
-    padding-top: 80px;
+    /* padding-top: 80px; */
+   padding: 3em 5em 3em 6em;
 }
 
-.iconEmailSend{
+/* .iconEmailSend{
     height: 17.999874114990234px;
     width: 20.000446319580078px;
     left: 1.999542236328125px;
     top: 3px;
     border-radius: 0px;
 
-}
+} */
