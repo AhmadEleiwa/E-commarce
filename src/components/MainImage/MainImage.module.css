@@ -1,7 +1,7 @@
-.mainImgContainer{
+.mainImgContainer {
     height: 600px;
     /* width: 500px; */
-    width: 100%;
+    width: 80%;
     background-color: #F5F5F5;
     border-radius: 4px;
     display: flex;
@@ -10,9 +10,16 @@
     margin-right: 6em;
 }
 
-.mainImg{
+.mainImg {
     /* width: 446px; */
     width: 80%;
     height: 315px;
     border: 0;
+}
+
+@media screen and (max-width:1280px) {
+    .mainImgContainer {
+        margin: 0 auto;
+
+    }
 }
