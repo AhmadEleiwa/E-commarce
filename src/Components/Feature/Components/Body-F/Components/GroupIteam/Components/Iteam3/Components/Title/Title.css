@@ -1,0 +1,34 @@
+.title3{
+   
+                position: relative;
+                top: 160px;
+                left:24px;
+               
+                        /* Speakers */
+
+
+                width: 114px;
+                height: 24px;
+
+                /* Heading/24PX SemiBold */
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 24px;
+                /* identical to box height, or 100% */
+
+                letter-spacing: 0.03em;
+
+                /* Text */
+
+                  color: #fcfbfb;
+
+
+                /* Inside auto layout */
+
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+}

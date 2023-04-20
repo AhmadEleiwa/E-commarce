@@ -1,7 +1,9 @@
+ import "./Title.css"
+
 function Title() {
     return (
       <>
-      <p>Featured</p>
+      <p className="titletop">Featured</p>
       </>
     );
   }

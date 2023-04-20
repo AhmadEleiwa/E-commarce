@@ -1,7 +1,9 @@
+ import "./subTitle.css"
+
 function subTitle() {
     return (
       <>
-      <p>New Arrival</p>
+      <p className="subtitletop">New Arrival</p>
       </>
     );
   }

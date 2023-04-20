@@ -4,9 +4,10 @@ import Feature from'./Components/Feature/Feature'
 
 function App() {
   return (
-    <>
-    <Feature/>
-    </>
+   <>
+   <Feature/> 
+  </>
+    
   );
 }
 

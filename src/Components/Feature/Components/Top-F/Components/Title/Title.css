@@ -1,4 +1,4 @@
-p{
+.titletop{
     width: 74px;
     height: 20px;
     
@@ -13,6 +13,8 @@ p{
     flex: none;
     order: 1;
     flex-grow: 0;
+
+    margin-left: 25px;
 }
 
 

@@ -1,0 +1,31 @@
+.a4{
+    /* Shop Now */
+
+    position: relative;
+    top: 110px;
+    left:24px;
+
+
+
+    width: 81px;
+    height: 24px;
+
+    /* Title/16PX Medium */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
