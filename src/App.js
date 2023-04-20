@@ -9,16 +9,15 @@ import Feature from './components/Feature';
 
 function App() {
   return (
-    <Feature />
-    // <Router>
-    //   <Routes>
-    //     <Route index element={<Skeleton> <HomePage /> </Skeleton>}></Route>
-    //     <Route  path='/product/:id' element={<Skeleton><ProductDetailsPage /></Skeleton>}></Route>
+    <Router>
+      <Routes>
+        <Route index element={<Skeleton> <HomePage /> </Skeleton>}></Route>
+        <Route  path='/product/:id' element={<Skeleton><ProductDetailsPage /></Skeleton>}></Route>
 
-    //     <Route  path='*' element={<Skeleton><ErrorNotFound /> </Skeleton>}></Route>
+        <Route  path='*' element={<Skeleton><ErrorNotFound /> </Skeleton>}></Route>
 
-    //   </Routes>
-    // </Router>
+      </Routes>
+     </Router>
     // <div className="App">
     //   <ThemeProvider theme={theme}>
     //     <Button color='primary' variant='contained' disableElevation> click</Button>
