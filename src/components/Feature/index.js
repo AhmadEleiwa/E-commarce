@@ -13,17 +13,17 @@ import img4 from './img/img4.png'
 
 import './style.css'
 const Feature = props => {
-    return <Box  className ={'feature-container'} sx={{width:'100%'}}>
+    return <Box  className ={'feature-container'} display={'flex'} flexDirection="column" alignItems={'flex-start'} sx={{width:'100% !important'}}>
         <div>
             <SubTitle>Featured</SubTitle>
             <Title>New Arrival</Title>
         </div>
-        <Box display={'grid'} gridTemplateColumns={'1fr 1fr'}gap='1em'>
+        <Box display={'grid'} minWidth={'100%'} gridTemplateColumns={'1fr 1fr'}gap='1em'>
             <FeaturedCard img={img4} title={'PlayStation 5'} center description={'Black and White version of the PS5 coming out on sale.'} />
             <Box display={'grid'} gap='1em' >
                 <FeaturedCard img={img3} title={'PlayStation 5'} description={'Black and White version of the PS5 coming out on sale.'} />
 
-                <Box display={"grid"} gridTemplateColumns={'1fr 1fr'} gap='1em'>
+                <Box display={"grid"} fontSize={'0.8em  '} gridTemplateColumns={'1fr 1fr'} gap='1em'>
                     <FeaturedCard img={img1} center title={'PlayStation 5'} description={'Black and White version of the PS5 coming out on sale.'} />
                     <FeaturedCard img={img2} center title={'PlayStation 5'} description={'Black and White version of the PS5 coming out on sale.'} />
                 </Box>

@@ -7,6 +7,7 @@ import ExploreProducts from "../components/ExploreProducts"
 import BestSellingProduct from "../components/BestSellingProducts"
 import { Box } from "@mui/system"
 import BrowseByCategory from "../components/BrowseByCategory"
+import Feature from "../components/Feature"
 const HomePage = props => {
     return <Container maxWidth={'xl'}  >
 
@@ -16,6 +17,7 @@ const HomePage = props => {
             <BrowseByCategory />
             <BestSellingProduct />
             <Banner title="Enhance Your Music Experience" img={Testimg} />
+            <Feature />
             <ExploreProducts />
      
 
