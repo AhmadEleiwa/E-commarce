@@ -17,8 +17,8 @@ const HomePage = props => {
             <BrowseByCategory />
             <BestSellingProduct />
             <Banner title="Enhance Your Music Experience" img={Testimg} />
-            <Feature />
             <ExploreProducts />
+            <Feature />
      
 
 
