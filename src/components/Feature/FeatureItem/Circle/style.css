@@ -1,0 +1,22 @@
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #2F2E3032;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+}
+.circle .body{
+ 
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    background-color: black;
+ 
+}
