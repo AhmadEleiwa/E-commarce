@@ -1,0 +1,21 @@
+.two-col2{
+    /* attractive-woman-wearing-hat-posing-black-background 1 */
+        
+
+                /* Frame 685 */
+
+                position: relative;
+                    width: 570px;
+                    height: 284px;
+                    background: #0D0D0D;
+                    border-radius: 4px;
+
+                    
+
+                    /* Inside auto layout */
+
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+              
+    }
