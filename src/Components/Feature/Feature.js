@@ -5,11 +5,11 @@ import TopF from './Components/Top-F/top'
 
 function Feature() {
   return (
-    <>
+    <div className="feature">
     <TopF/>
     <BodyF/>
     <FooterF/>
-    </>
+    </div>
   );
 }
 

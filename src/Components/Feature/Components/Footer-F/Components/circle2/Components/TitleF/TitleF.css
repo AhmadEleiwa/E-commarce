@@ -1,0 +1,29 @@
+.titlef2{
+/* FREE AND FAST DELIVERY */
+
+
+    width: 342px;
+    height: 28px;
+    position: relative;
+    top:80px;
+    left: 430px;
+
+    /* Title/20PX Semibold */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

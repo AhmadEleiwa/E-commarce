@@ -2,14 +2,16 @@
     
 /* Auto layout */
 
-display: flex;
-flex-direction: row;
-align-items: flex-start; 
-padding: 0px;
-gap: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start; 
+        padding: 0px;
+        gap: 30px;
 
-width: 1170px;
-height: 600px;
+        width: 1170px;
+        height: 600px;
+
+
 
 
 }

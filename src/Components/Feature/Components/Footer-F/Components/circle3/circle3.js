@@ -1,17 +1,17 @@
 
-import "./circle.css"
+import "./circle3.css"
 import Icon from "./Components/Icon/Icon"
 import TitleF from "./Components/TitleF/TitleF"
 import SubTF from "./Components/SubTF/SubTF"
 
-function Circle1() {
+function Circle3() {
     return (
       <>
-      <Icon/>
+       <Icon/>
       <TitleF/>
       <SubTF/>
       </>
     );
   }
   
-  export default Circle1;
+  export default Circle3;

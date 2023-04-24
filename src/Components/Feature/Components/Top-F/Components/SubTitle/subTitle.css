@@ -1,21 +1,21 @@
 .subtitletop{
 
-width: 216px;
-height: 48px;
+        width: 216px;
+        height: 48px;
 
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 36px;
-line-height: 48px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
 
-letter-spacing: 0.04em;
+        letter-spacing: 0.04em;
 
-color: #000000;
+        color: #000000;
 
 
-flex: none;
-order: 1;
-flex-grow: 0;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
 }
