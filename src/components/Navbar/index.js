@@ -138,7 +138,7 @@ function PrimarySearchAppBar() {
             Exclusive
           </Typography>
           <Box sx={{ display:{ lg:'flex',md:'none',xs:'none'},alignItems: 'center',justifyContent:'space-between', bgcolor: 'primary',ml:'6em' }} >
-            <Link href="#home" className={style.NavLink}  underline="none" sx={{color:"#000000"}} >Home</Link>
+            <Link to={'/'} className={style.NavLink}  underline="none" sx={{color:"#000000"}} >Home</Link>
             <Link href="#contact" className={style.NavLink} underline="none" sx={{color:"#000000"}}>Contact</Link>
             <Link href="#about"  className={style.NavLink} underline="none" sx={{color:"#000000"}}>About</Link>
             <Link href="#signup" className={style.NavLink} underline="none" sx={{color:"#000000"}}>Sign Up</Link>
